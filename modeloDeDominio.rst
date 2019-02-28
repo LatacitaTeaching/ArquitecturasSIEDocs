@@ -8,7 +8,7 @@ Descripción
 El primer paso para la elaboración del proyecto consiste en la definición del *modelo de dominio*. Dicho *modelo de dominio* deberá caracterizar el dominio de la aplicación. Para ello, el modelo de dominio deberá especificar los elementos que constituyen el problema que queremos resolver, los datos que contienen dichos elementos y las reglas de manipulación de dichos elementos.
 El modelo de dominio debe de estar libre de detalles de bajo nivel, propios de tecnologías o formas de implementación concretas, constituyendo un lenguaje universal para el desarrollo de la aplicación que facilite la comunicación entre desarrolladores y *stakeholders*.
 
-Con esta idea en mente, la filosofía de desarrollo *Domain-Driven Design* [Evans2003]_ trata de establecer una serie de pautas para una adecuada elaboración de un modelo de dominio. Para ello se distinguen entre diferentes tipos de entidades de dominio, como *Entities* o *Value Objects* y se establecen una serie de reglas para establecer relaciones entre estos elementos. El seguimiento de estas reglas permite obtener modelos de dominio que preservan la integridad de sus elementos mientras que se asegura una cierta facilidad de evolución.
+Con esta idea en mente, la filosofía de desarrollo *Domain-Driven Design* [1]_ trata de establecer una serie de pautas para una adecuada elaboración de un modelo de dominio. Para ello se distinguen entre diferentes tipos de entidades de dominio, como *Entities* o *Value Objects* y se establecen una serie de reglas para establecer relaciones entre estos elementos. El seguimiento de estas reglas permite obtener modelos de dominio que preservan la integridad de sus elementos mientras que se asegura una cierta facilidad de evolución.
 
 Actividades a realizar
 =======================
@@ -61,4 +61,4 @@ En este apartado se valorará que:
   * Los diferentes elementos que conforman el modelo tengan correctamente definidos sus métodos ``equals`` y ``hashCode``, y, opcionalmente, su método ``compareTo``.
 
 .. _MagicDraw: https://www.nomagic.com/products/magicdraw
-.. [Evans2003] E. J. Evans. *Domain-Driven Design*. Addison-Wesley, 2003.
+.. [1] E. J. Evans. *Domain-Driven Design*. Addison-Wesley, 2003.
