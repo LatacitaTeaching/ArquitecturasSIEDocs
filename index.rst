@@ -12,5 +12,11 @@ Este documento contiene diversa información sobre el proyecto software que se d
 Más concretamente, se incluye una descripción del sistema a desarrollar y, por cada etapa del proyecto, una breve descripción de las tareas a realizar en dicha etapa, algunas indicaciones y consideraciones a tener en cuenta, los elementos a entregar y los criterios de evaluación.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contenidos:
+
+   descripcion
+   modeloDeDominio
+
+.. modeloDominio, anotacionesJPA, repositorios. apiRest, capaServicio, router
+   paginaDinamica, componenteGrafico
