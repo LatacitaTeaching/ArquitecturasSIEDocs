@@ -13,7 +13,7 @@ Más concretamente, se incluye una descripción del sistema a desarrollar y, por
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contenidos:
+   :caption: Contenidos
 
    descripcion
    modeloDeDominio
