@@ -58,6 +58,7 @@ En este apartado se valorará que:
   * La implementación creada sea conforme al modelo de dominio.
   * La elección de las estructuras de datos para las colecciones sea adecuada.
   * La lógica de negocio que se haya definido e implementado sea eficiente.
+  * Los diferentes elementos que conforman el modelo tengan correctamente definidos sus métodos ``equals`` y ``hashCode``, y, opcionalmente, su método ``compareTo``.
 
 .. _MagicDraw: https://www.nomagic.com/products/magicdraw
 .. [Evans2003] E. J. Evans. *Domain-Driven Design*. Addison-Wesley, 2003.
