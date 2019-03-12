@@ -17,6 +17,7 @@ Más concretamente, se incluye una descripción del sistema a desarrollar y, por
 
    descripcion
    modeloDeDominio
+   anotacionesJPA
 
-.. modeloDominio, anotacionesJPA, repositorios. apiRest, capaServicio, router
+..  apiRest, capaServicio, router
    paginaDinamica, componenteGrafico
