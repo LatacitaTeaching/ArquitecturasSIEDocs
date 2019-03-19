@@ -1,6 +1,6 @@
-================================
- Anotaciones JPA y Repositorios
-================================
+=======================
+ Capa de Persistencia
+=======================
 
 Descripción
 ============
@@ -32,6 +32,8 @@ Ficheros Auxiliares
 
 :download:`application.properties <files/application.properties>`
 
+:download:`CommandLineRunner <files/CarsharingApplication.java>`
+
 Elementos a entregar
 =====================
 
@@ -62,3 +64,10 @@ Para esta fase del proyecto se valorará que:
   * La definición de los repositorios sea correcta.
   * Sólo existan repositorios para aquellos elementos de dominio que realmente lo precisen.
   * El alumno sea capaz de cargar la aplicación con una serie de datos iniciales.
+
+Trucos y Consejos
+==================
+
+  #. Se puede accedder a la consola de H2 a través de la URL ``http://localhost:8080/h2-console``, salvo que se haya configurado para utilizar una URL diferente.
+  #. Dentro de la consola de acceso a H2, para acceder al esquema creado, se debe proporcionar como ``JDBC URL`` la misma URL que se haya proporcionado para la propiedad ``spring.datasource.url`` dentro del fichero ``application-properties``.
+  #. Se recomienda crear un constructor vacío, aunque sea con visibilidad protegida, para cada ``entity``.

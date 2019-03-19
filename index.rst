@@ -17,7 +17,7 @@ Más concretamente, se incluye una descripción del sistema a desarrollar y, por
 
    descripcion
    modeloDeDominio
-   anotacionesJPA
+   persistencia
 
 ..  apiRest, capaServicio, router
    paginaDinamica, componenteGrafico
