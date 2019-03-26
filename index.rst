@@ -18,6 +18,6 @@ Más concretamente, se incluye una descripción del sistema a desarrollar y, por
    descripcion
    modeloDeDominio
    persistencia
+   servicio
 
-..  apiRest, capaServicio, router
-   paginaDinamica, componenteGrafico
+..  interfazWeb

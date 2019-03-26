@@ -1,0 +1,74 @@
+Recurso: /viajes
+Verbos Aceptados: GET
+
+GET	/viajes - Devuelve todos los viajes. Si hay parámetros, devuelve los viajes entre dos puntos concretos.
+
+Parámetros:
+	Origen  - Ciudad o punto de origen
+	Destino - Ciudad o punto de destino
+	NOTA: Han de estar especificados los dos parámetros o ninguno.
+
+Respuestas: 200 Ok, 400 Bad Request
+	
+Modelo de Respuesta:
+[
+    {
+        "id": 1,
+        "precio": 6000,
+        "duracion": 8000,
+        "numPlazas": 3,
+        "fecha": "2019-03-31T22:00:00.000+0000",
+        "origen": "Facultad de Ciencias, Santander",
+        "destino": "Playa de la Caleta, Cadiz",
+        "conductor": {
+            "username": "TaxiDriver",
+            "nombre": "Travis",
+            "apellido": "Bickle",
+            "email": "travisBickle@nyc-taxi.us",
+            "telefonos": [],
+            "anhosCarnet": 22
+        }
+    },
+    {
+        "id": 4,
+        "precio": 6000,
+        "duracion": 8000,
+        "numPlazas": 3,
+        "fecha": "2019-04-06T22:00:00.000+0000",
+        "origen": "Playa de la Caleta, Cadiz",
+        "destino": "Facultad de Ciencias, Santander",
+        "conductor": {
+            "username": "TaxiDriver",
+            "nombre": "Travis",
+            "apellido": "Bickle",
+            "email": "travisBickle@nyc-taxi.us",
+            "telefonos": [],
+            "anhosCarnet": 22
+        }
+    }
+]
+	 
+Recurso: /viajes/{id}
+Verbos HTTP aceptados: GET, PUT, DELETE
+
+GET /viajes/{id}
+Respuestas: 200 Ok, 404 Not Found
+
+Modelo de Respuesta:
+{
+    "id": 1,
+    "precio": 6000,
+    "duracion": 8000,
+    "numPlazas": 3,
+    "fecha": "2019-03-31T22:00:00.000+0000",
+    "origen": "Facultad de Ciencias, Santander",
+    "destino": "Playa de la Caleta, Cadiz",
+    "conductor": {
+        "username": "TaxiDriver",
+        "nombre": "Travis",
+        "apellido": "Bickle",
+        "email": "travisBickle@nyc-taxi.us",
+        "telefonos": [],
+        "anhosCarnet": 22
+    }
+}
