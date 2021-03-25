@@ -68,7 +68,10 @@ Para facilitar la visualización de dicha lista, esta interfaz sólo mostrará, 
 
 Junto a estos elementos se deberá incluir caja de búsqueda que permita buscar una serie directamente por su nombre. En este caso, si la búsqueda tiene éxito, la página deberá mostrar el listado de la inicial que corresponda con la serie encontrada destacada de algún modo dentro de dicho listado.  Si una búsqueda concluyese sin éxito, la página mostrará simplemente un cuadro de diálogo reportando el error.
 
-Dentro del listado de series, al lado del nombre de cada serie se mostrará un enlace que permita agregar la serie a la página personal de cada usuario. Si la serie ya estuviese agregada, la acción no tiene efecto. Si la serie no estuviese previamente agregada, se incorporará a la lista de pendientes. En este caso, además se enviará una notificación a los amigos de dicho usuario para informarles de que ha empezado a seguir la serie, y, por tanto, es fuente potencial de *spoilers*.
+Dentro del listado de series, al lado del nombre de cada serie se mostrará un enlace que permita agregar la serie a la página personal de cada usuario. Si la serie ya estuviese agregada, la acción no tiene efecto. Si la serie no estuviese previamente agregada, se incorporará a la lista de pendientes.
+
+..
+  En este caso, además se enviará una notificación a los amigos de dicho usuario para informarles de que ha empezado a seguir la serie, y, por tanto, es fuente potencial de *spoilers*.
 
 Por último, si dentro del listado de series, se selecciona el título de una serie, se deberá abrir bajo su título una pequeña sipnosis de la misma, junto con los nombres del creador o creadores de la series, así como una lista con sus principales actores.
 
