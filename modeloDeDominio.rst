@@ -5,8 +5,8 @@
 Descripción
 ============
 
-El primer paso para la elaboración del proyecto consiste en la definición del *modelo de dominio*. Dicho *modelo de dominio* deberá caracterizar el dominio de la aplicación. Para ello, el modelo de dominio deberá especificar los elementos que constituyen el problema que queremos resolver, los datos que contienen dichos elementos y las reglas de manipulación de dichos elementos.
-El modelo de dominio debe de estar libre de detalles de bajo nivel, propios de tecnologías o formas de implementación concretas, constituyendo un lenguaje universal para el desarrollo de la aplicación que facilite la comunicación entre desarrolladores y *stakeholders*.
+El primer paso para la elaboración del proyecto consiste en la definición del *modelo de dominio*. Dicho *modelo de dominio*, como su nombre indica, deberá caracterizar el dominio de la aplicación. Para ello, el modelo de dominio deberá especificar los elementos que constituyen el problema que queremos resolver, los datos que contienen dichos elementos y las reglas de manipulación de dichos elementos.
+El modelo de dominio debe de estar libre de detalles de bajo nivel, propios de tecnologías o formas de implementación concretas, constituyendo un lenguaje universal para el desarrollo de la aplicación que facilite la comunicación entre desarrolladores y las personas involucradas en el dominio. 
 
 Con esta idea en mente, la filosofía de desarrollo *Domain-Driven Design* [1]_ trata de establecer una serie de pautas para una adecuada elaboración de un modelo de dominio. Para ello se distinguen entre diferentes tipos de entidades de dominio, como *Entities* o *Value Objects* y se establecen una serie de reglas para establecer relaciones entre estos elementos. El seguimiento de estas reglas permite obtener modelos de dominio que preservan la integridad de sus elementos mientras que se asegura una cierta facilidad de evolución.
 
@@ -15,20 +15,26 @@ Actividades a realizar
 
 Para superar esta etapa del proyecto, el alumno deberá realizar las siguientes actividades.
 
-  #. Elaborar un *modelo de dominio*, representado mediante un diagrama de clases UML, que caracterice el* sistema Polaflix* anterioremente descrito.
+  #. Elaborar un *modelo de dominio*, representado mediante un diagrama de clases UML, que caracterice el sistema Polaflix.
   #. Clasificar los elementos del modelo anterior como *Entities*, *Value Objects* o *Services*.
   #. Identificar los *aggregates*, destacando su *aggregate root*, del modelo creado.
   #. Refactorizar el *modelo de dominio* inicialmente creado para que sea conforme a las reglas de *Domain-Driven Design*.
   #. Implementar el modelo de dominio en Java, utilizando simplemente *POJOs (Plain Old Java Objects)*, dentro de un proyecto *Spring Boot*.
 
+.. note::
+   Dentro de las prácticas de la asignatura, al seleccionar la opción de ver un capítulo, no se deberá reproducir el capítulo, por razones obvias. No obstante, al seleccionar esa opción sí deberá considerarse el capítulo como reproducido y realizarse todas las modificaciones que corresponda dentro del sistema.
+
+.. note::
+   Por simplicidad, se puede considerar que las series se añaden a la plataforma de manera completa, es decir, aparecen desde el inicio con todas sus temporadas y todos sus capítulos.
+   
 Elementos a entregar
 =====================
 
-  #. Uno o más diagramas de clase UML, representando el modelo de domino creadado y refactorizado.
+  #. Uno o más diagramas de clase UML, representando el modelo de domino creado y refactorizado. Este modelo deberá implementar dos operaciones de negocio muy concretas: *agregar una serie al espacio personal de un usuario* y *anotar un capítulo como reproducido*.
   #. Un documento de texto simple, o un archivo *pdf* no muy elaborado, donde se especifique de qué tipo (*Entity*, *Value Object* o *Service*) es cada elemento del modelo de dominio y qué *aggregates* existen dentro de dicho modelo, identificando por cada *aggregate* su *aggregate root*. Además, se deberán proporcionar todas las justificaciones que se consideren oportunas para justificar las decisiones anteriores.
   #. El código resultante de transformar el modelo de dominio anterior a Java.
 
-Para la elaboración del modelo de dominio se recomienda utilizar MagicDraw_ como herramienta de modelado, aunque se deja libertad al alumno para utilizar la herramienta de modelado que considere más adecuada, existiendo incluso la posibilidad de elaborar los modelos a mano. En este último caso, el alumno deberá cuidar la limpieza de los modelos creados y escanearlos antes de su entrega.
+Para la elaboración del modelo de dominio se recomienda utilizar MagicDraw_ o StarUML_ como herramientas de modelado, aunque se deja libertad al alumno para utilizar la herramienta de modelado que considere más adecuada, existiendo incluso la posibilidad de elaborar los modelos a mano. En este último caso, el alumno deberá cuidar la limpieza de los modelos creados y escanearlos antes de su entrega.
 
 Criterios de calificación
 ==========================
@@ -61,4 +67,6 @@ En este apartado se valorará que:
   * Los diferentes elementos que conforman el modelo tengan correctamente definidos sus métodos ``equals`` y ``hashCode``, y, opcionalmente, su método ``compareTo``.
 
 .. _MagicDraw: https://www.nomagic.com/products/magicdraw
+.. _StarUML: https://staruml.io/ 
+
 .. [1] E. J. Evans. *Domain-Driven Design*. Addison-Wesley, 2003.
