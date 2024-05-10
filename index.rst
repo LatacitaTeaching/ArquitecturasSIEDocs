@@ -19,5 +19,4 @@ Más concretamente, se incluye una descripción del sistema a desarrollar y, por
    modeloDeDominio
    persistencia
    servicio
-
-..  interfazWeb
+   presentacion
